@@ -16,7 +16,7 @@ mapCC = (ccType) ->
 
 $(document).ready ->
   # For errors that happen later.
-  Spree.webpayPaymentMethod.prepend("<div id='webpayError' class='errorExplanation' style='display:none'></div>")
+  Spree.webpayPaymentMethod.prepend("<div id='webpayError' class='errorExplanation alert alert-danger' style='display:none'></div>")
 
   $('[type="submit"]').click ->
     $('#webpayError').hide()
